@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="store">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive app</title>
+
+    <!-- Twitter Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  </head>
+
+  <body ng-controller="StoreController as store">
+    <div ng-repeat="product in store.products">
+      <h1> {{product.name}} </h1>
+      <h2> {{product.brand}} </h2>
+      <h3> ${{product.price}} </h3>
+      <p> {{product.description}} </p>
+      <button ng-show="product.canPurchase"> Add to cart </button>
+    </div>
+
+    <!-- Angular -->
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
