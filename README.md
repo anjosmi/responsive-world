@@ -10,7 +10,7 @@ Expressions:
 http://docs.angularjs/guide/expression
 
 
-# Some directives used in this project:
+# Some directives used in this project
 
 ng-app - attach the Application Module to the page
 
